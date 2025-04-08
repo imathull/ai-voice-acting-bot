@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Voice Acting Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <div class="container">
+    <h1>🎙️ AI Voice Acting Bot</h1>
+
+    <!-- Login / Signup -->
+    <div id="auth-section">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="signup()">Sign Up</button>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- App section -->
+    <div id="app-section" style="display:none;">
+      <textarea id="text-input" placeholder="Enter your script here..."></textarea>
+
+      <select id="voice-select">
+        <option value="21m00Tcm4TlvDq8ikWAM">Rachel (Default)</option>
+        <option value="29vD33N1CtxCmqQRPOHJ">Domi (Male)</option>
+        <option value="EXAVITQu4vr4xnSDxMaL">Bella (Robotic)</option>
+      </select>
+
+      <button onclick="generateVoice()">🎧 Generate Voice</button>
+      <button id="download-btn" style="display: none;">⬇️ Download MP3</button>
+      <audio id="audio-player" controls></audio>
+
+      <h2>🕘 History</h2>
+      <button onclick="clearAllHistory()">🗑️ Clear All </button>
+      <div id="history-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

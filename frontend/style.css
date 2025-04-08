@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    text-align: center;
+    padding: 50px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    transition: background 0.3s;
+  }
+  
+  body.dark .container {
+    background: #1e1e1e;
+  }
+  
+  textarea, select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #5a4cbf;
+  }
+  
+  audio {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .history-entry {
+    background: #f8f8f8;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  body.dark .history-entry {
+    background: #2c2c2c;
+    color: #ddd;
+  }
+  
+  .history-entry p {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
